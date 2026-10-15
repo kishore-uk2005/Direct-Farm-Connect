@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Crop - Direct Farm Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Buy Crop</h1>
+
+<form action="buy-crop" method="post">
+
+    <label>Crop ID:</label>
+    <input type="number" name="cropId" required>
+
+    <br><br>
+
+    <label>Quantity to Buy (Kg):</label>
+    <input type="number" name="quantity" min="1" required>
+
+    <br><br>
+
+    <label>Payment Mode:</label>
+
+    <select name="payment">
+        <option value="CASH">CASH</option>
+        <option value="GPAY">GPAY</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Buy Crop</button>
+
+</form>
+
+<br>
+
+<a href="consumer-dashboard.html">
+    <button type="button">Back</button>
+</a>
+
+</body>
+</html>

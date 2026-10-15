@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Direct Farm Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">🌱 Direct Farm Connect</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="form-container">
+
+    <h1>Login</h1>
+
+    <p class="form-subtitle">
+      Login to access your Direct Farm Connect account.
+    </p>
+
+    <form action="login" method="post">
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input
+                type="text"
+                name="phone"
+                placeholder="Enter your phone number"
+                required>
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                required>
+      </div>
+
+      <div class="form-group">
+        <label>Login As</label>
+
+        <select name="role" required>
+          <option value="">Select Role</option>
+          <option value="FARMER">Farmer</option>
+          <option value="CONSUMER">Consumer</option>
+        </select>
+      </div>
+
+      <button type="submit" class="full-btn">
+        Login
+      </button>
+
+    </form>
+
+    <p class="form-footer">
+      Don't have an account?
+      <a href="signup.html">Create an account</a>
+    </p>
+
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Direct Farm Connect
+</footer>
+
+</body>
+</html>
